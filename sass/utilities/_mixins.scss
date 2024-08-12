@@ -1,0 +1,21 @@
+// _mixins.scss
+@mixin navbar-link-styles {
+    color: $navbar-text-color;
+    text-decoration: none;
+    font-size: $nav-link-font-size;
+    padding: $nav-link-padding;
+  }
+
+
+
+// _mixins.scss
+@mixin footer-text-styles {
+    color: $footer-text-color;
+    font-size: $footer-font-size;
+    margin: $footer-margin;
+    
+    &:hover {
+      color: $footer-text-hover-color;
+    }
+  }
+  

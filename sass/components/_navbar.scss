@@ -1,0 +1,47 @@
+
+// _navbar.scss
+@import '../utilities/variables';
+@import '../utilities/mixins';
+
+.navbar {
+  display: flex;
+  flex-direction: column; // Diseño en columna para móviles
+  align-items: center;
+  background-color: $navbar-bg-color;
+
+  .navbar-brand {
+    font-size: $navbar-font-size;
+    color: $navbar-text-color;
+    text-decoration: none;
+    margin-bottom: $nav-item-margin;
+  }
+
+  .navbar-toggler {
+    background: none;
+    border: none;
+    color: $navbar-text-color;
+    font-size: $navbar-font-size;
+    cursor: pointer;
+  }
+
+  .navbar-collapse {
+    width: 100%;
+  }
+
+  .navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .nav-item {
+      margin: $nav-item-margin 0;
+
+      .nav-link {
+        @include navbar-link-styles;
+      }
+    }
+  }
+}
