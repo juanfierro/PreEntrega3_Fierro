@@ -1,0 +1,6 @@
+//_button.scss
+.fondo-blanco {
+    background-color: $color-white;
+    display: inline-block;
+    @include box-style;
+}

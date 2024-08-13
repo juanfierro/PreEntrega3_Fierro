@@ -1,4 +1,30 @@
 
+$font-family: 'Imbue', sans-serif;
+$color-white: rgba(255, 255, 255, 0.877);
+$color-background: #f8f8f8;
+$color-text: rgba(8, 7, 7, 0.692);
+$box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+$padding-small: 10px;
+$margin-bottom: 20px;
+$border-radius: 10px;
+
+
+// File: utilities/_variables.scss
+$font-family-imperial: 'Imperial Script', cursive;
+$font-family-imbue: 'Imbue', sans-serif;
+$font-size-large: 4rem;
+$font-size-medium: 3rem;
+$font-size-small: 2.5rem;
+$font-size-imbue: 2rem;
+$margin-bottom: 20px;
+
+
+
+
+
+
+
+
 // _variables.scss
 $navbar-bg-color: transparent;
 $navbar-text-color: white;
@@ -16,3 +42,15 @@ $footer-text-hover-color: #136131;
 $footer-font-size: 20px;
 $footer-padding: 20px 0;
 $footer-margin: 10px 0;
+
+
+
+// _variables.scss
+$white-transparent: rgba(255, 255, 255, 0.76);
+$border-radius: 10px;
+
+
+// _variables.scss
+$white-semi-transparent: rgba(255, 255, 255, 0.8);
+$border-radius-small: 5px;
+$border-color: #ccc;

@@ -15,14 +15,19 @@
 @import "./layout/header";
 @import "./layout/footer";
 @import "./layout/main-index";
+@import "./layout/catalogo";
+
 
 
 //cuarto se llama a los componentes
 
 @import "./components/button";
+@import "./components/cards";
 @import "./components/navbar";
 
 //SIEMPRE AL FINAL SE LLAMA A LOS MEDIA 
 
 // SI ESTAMOS EN DESKTOP A MOBILE => DECRECIENTE
 // SI ESTAMOS DE MOBILE A DESKTOP => CRECIENTE
+
+@import "./layout/media/mediaDesktop"; // Importación de media queries específicos

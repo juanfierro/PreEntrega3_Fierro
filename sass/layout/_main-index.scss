@@ -1,0 +1,120 @@
+// _main-index.scss
+main {
+    padding: 20px;
+    text-align: center;
+}
+  
+h1 {
+    font-family: $font-family-imperial;
+    font-size: $font-size-large;
+    display: flex;
+}
+  
+h2 {
+    font-family: $font-family-imperial;
+    font-size: $font-size-medium;
+    display: flex;
+}
+  
+.fuente-imperial {
+    font-family: $font-family-imperial;
+    font-size: $font-size-small;
+}
+  
+.fuente-imbue {
+    font-family: $font-family-imbue;
+    font-size: $font-size-imbue;
+}
+  
+.fuente-italica {
+    font-size: $font-size-imbue;
+    margin-bottom: $margin-bottom;
+    font-style: italic;
+}
+  
+ul {
+    list-style-type: none;
+    padding: 0;
+
+    li {
+    margin: 10px 0;
+    font-size: auto; // Consider changing 'auto' to a specific size
+    }
+}
+  
+    .fondo-principal {
+        @include background-image("../assets/img/eucalyptus.jpg");
+    }
+  
+    .fondo-secundario {
+        @include background-image("../assets/img/fondo2.jpg");
+    }
+  
+
+
+// _main-index.scss
+
+/* Sección de bienvenida */
+.welcome-section {
+    text-align: center;
+    margin-bottom: 40px;
+    @include text-background();
+    
+    .welcome-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+  
+        .welcome-text {
+            margin-bottom: 20px;
+        }
+  
+        img.welcome-image {
+            max-width: 100%;
+            height: fit-content;
+            margin-top: 20px;
+            padding: 10px;
+            box-sizing: border-box;
+      }
+    }
+  }
+  
+  /* Sección de productos destacados */
+  .featured-section {
+    text-align: left;
+  
+    h2 {
+      display: inline-block;
+      @include text-background();
+      margin: 20px;
+    }
+  
+    .featured-products {
+      display: grid;
+      gap: 20px;
+  
+      .product {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+  
+        img {
+          width: 200px;
+          height: auto;
+          margin-bottom: -43px;
+          border-top-left-radius: 20px;
+          border-top-right-radius: 20px;
+        }
+  
+        p {
+          @include text-background();
+          width: 18cap;
+          text-align: center;
+          margin-top: 0;
+          padding: 10px;
+          box-sizing: border-box;
+        }
+      }
+    }
+  }
+  

@@ -1,3 +1,14 @@
+
+// _mixins.scss
+@mixin box-style($padding: $padding-small, $margin: $margin-bottom, $radius: $border-radius) {
+  padding: $padding;
+  margin-bottom: $margin;
+  border-radius: $radius;
+  box-shadow: $box-shadow;
+}
+
+
+
 // _mixins.scss
 @mixin navbar-link-styles {
     color: $navbar-text-color;
@@ -19,3 +30,66 @@
     }
   }
   
+
+// _mixins.scss
+@mixin background-image($image-path) {
+  background-image: url($image-path);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+
+
+// _mixins.scss
+@mixin border-radius($radius: $border-radius) {
+  border-radius: $radius;
+}
+
+@mixin text-background($color: $white-transparent) {
+  background-color: $color;
+  padding: 0 10px;
+  @include border-radius();
+}
+
+
+@mixin border-radius($radius: $border-radius-small) {
+  border-radius: $radius;
+}
+
+@mixin background-semi-transparent($color: $white-semi-transparent) {
+  background-color: $color;
+  @include border-radius();
+}
+
+@mixin button-style {
+  padding: 10px 20px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.76);
+  color: #000000d7;
+  cursor: pointer;
+  @include border-radius();
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+// Mixin para bordes y transiciones de tarjetas
+@mixin border-radius($radius: 5px) {
+  border-radius: $radius;
+}
+
+@mixin box-shadow($shadow: 0 4px 8px rgba(0, 0, 0, 0.2)) {
+  box-shadow: $shadow;
+}
+
+@mixin transition($property: all, $duration: 0.3s) {
+  transition: $property $duration;
+}
+
+@mixin flex-center($direction: column, $justify: flex-start, $align: center) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}

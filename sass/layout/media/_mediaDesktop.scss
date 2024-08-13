@@ -1,0 +1,24 @@
+@import "../../utilities/variables";
+
+// Responsive styles for desktop
+@media (min-width: 769px) {
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+
+    .footer-container {
+      flex-direction: row;
+      justify-content: space-between;
+
+      .footer-row {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        p {
+          font-size: calc(#{$footer-font-size} + 2px);
+        }
+      }
+    }
+  }
+}
