@@ -42,8 +42,6 @@ header {
 }
 
 
-
-
 .navbar {
     display: flex;
     flex-direction: column; /* Diseño en columna para móviles */
