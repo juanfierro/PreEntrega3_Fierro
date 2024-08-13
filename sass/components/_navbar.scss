@@ -1,11 +1,10 @@
 
-// _navbar.scss
 @import '../utilities/variables';
 @import '../utilities/mixins';
 
 .navbar {
   display: flex;
-  flex-direction: column; // Diseño en columna para móviles
+  flex-direction: column;
   align-items: center;
   background-color: $navbar-bg-color;
 

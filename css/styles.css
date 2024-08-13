@@ -10,11 +10,6 @@ a {
   text-decoration: none; }
 
 body {
-  font-family: 'Imbue', sans-serif;
-  margin: 0;
-  padding: 0; }
-
-body {
   font-family: "Imbue", sans-serif;
   margin: 0;
   padding: 0; }
@@ -443,6 +438,53 @@ ul {
   cursor: pointer;
   border-radius: 5px;
   font-size: 16px; }
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .featured-section {
+    text-align: center; }
+  .featured-products {
+    grid-template-columns: 1fr 1fr; }
+  footer {
+    display: flex;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-evenly; }
+  footer .footer-container {
+    display: flex;
+    flex-direction: row; }
+  .about-section {
+    padding: 20px; }
+  .nosotros-container {
+    width: 100%; }
+  .search-section {
+    display: flex;
+    flex-direction: row;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px; }
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr); }
+  .contact-form {
+    padding: 10px; }
+  .cart-items {
+    grid-template-columns: 1fr; }
+  .cart-item {
+    display: flex;
+    flex-direction: row; }
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between; }
+  .navbar-collapse {
+    display: flex;
+    display: flex;
+    justify-content: flex-end; }
+  .navbar-nav {
+    display: flex;
+    flex-direction: row; }
+  .nav-item {
+    margin: 0 10px; } }
 
 /* "Se cumpliran las siguientes condiciones siempre y cuando el ancho de pantalla 
 sea como minimo 769 px en adelante" (Desktop) */

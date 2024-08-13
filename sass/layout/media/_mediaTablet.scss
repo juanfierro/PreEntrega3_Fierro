@@ -1,0 +1,72 @@
+@import "../../utilities/variables";
+@import "../../utilities/mixins";
+
+// sass/layout/media/_media.scss
+
+@media (min-width: 426px) and (max-width: 768px) {
+    
+    .featured-section {
+        text-align: center;
+    }
+
+    .featured-products {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    footer {
+        @include flex-direction(row);
+        @include justify-content(space-evenly);
+    }
+
+    footer .footer-container {
+        @include flex-direction(row);
+    }
+
+    .about-section {
+        padding: 20px;
+    }
+
+    .nosotros-container {
+        width: 100%;
+    }
+    
+    .search-section {
+        @include flex-direction(row);
+        @include align-items(flex-start);
+        gap: 10px;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-form {
+        padding: 10px;
+    }
+
+    .cart-items {
+        @include grid-template-columns(1fr);
+    }
+
+    .cart-item {
+        @include flex-direction(row);
+    }
+
+    .navbar {
+        @include flex-direction(row);
+        @include justify-content(space-between);
+    }
+
+    .navbar-collapse {
+        @include display(flex);
+        @include justify-content(flex-end);
+    }
+
+    .navbar-nav {
+        @include flex-direction(row);
+    }
+
+    .nav-item {
+        margin: 0 10px;
+    }
+}

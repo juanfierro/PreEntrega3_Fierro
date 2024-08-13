@@ -110,3 +110,7 @@
 @mixin display($display) {
   display: $display;
 }
+
+@mixin grid-template-columns($value) {
+  grid-template-columns: $value;
+}

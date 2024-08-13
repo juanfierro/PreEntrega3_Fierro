@@ -1,15 +1,15 @@
-@import '../utilities/variables'; // Importar variables globales
-@import '../utilities/mixins';    // Importar mixins globales
+@import '../utilities/variables';
+@import '../utilities/mixins';
 
 .about-section {
-  @include flex-center(row, center, center); // Utilizar mixin para centrar
+  @include flex-center(row, center, center);
   min-height: 50rem;
 }
 
 .nosotros-container {
-  background: $white-semi-transparent; // Usar variable para color de fondo
+  background: $white-semi-transparent;
   padding: 20px;
-  @include border-radius(10px);  // Utilizar mixin para border-radius
+  @include border-radius(10px);
   width: 85%;
   text-align: center;
 
