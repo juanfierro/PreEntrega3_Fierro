@@ -1,24 +1,7 @@
 @import "../utilities/variables";
+@import "../utilities/mixins";
 
-// Mixin para bordes y transiciones
-@mixin border-radius($radius: 5px) {
-  border-radius: $radius;
-}
 
-@mixin box-shadow($shadow: 0 4px 8px rgba(0, 0, 0, 0.2)) {
-  box-shadow: $shadow;
-}
-
-@mixin transition($property: all, $duration: 0.3s) {
-  transition: $property $duration;
-}
-
-@mixin flex-center($direction: column, $justify: flex-start, $align: center) {
-  display: flex;
-  flex-direction: $direction;
-  justify-content: $justify;
-  align-items: $align;
-}
 
 .card {
   width: 230px;

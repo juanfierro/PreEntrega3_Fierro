@@ -1,0 +1,20 @@
+@import '../utilities/variables'; // Importar variables globales
+@import '../utilities/mixins';    // Importar mixins globales
+
+.about-section {
+  @include flex-center(row, center, center); // Utilizar mixin para centrar
+  min-height: 50rem;
+}
+
+.nosotros-container {
+  background: $white-semi-transparent; // Usar variable para color de fondo
+  padding: 20px;
+  @include border-radius(10px);  // Utilizar mixin para border-radius
+  width: 85%;
+  text-align: center;
+
+  p {
+    line-height: 1.6;
+    text-align: left;
+  }
+}
