@@ -1,24 +1,117 @@
 @import "../../utilities/variables";
+@import "../../utilities/mixins";
 
-// Responsive styles for desktop
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* "Se cumpliran las siguientes condiciones siempre y cuando el ancho de pantalla 
+sea como minimo 769 px en adelante" (Desktop) */
+
 @media (min-width: 769px) {
-  footer {
-    flex-direction: row;
-    justify-content: space-between;
-
-    .footer-container {
-      flex-direction: row;
-      justify-content: space-between;
-
-      .footer-row {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-
-        p {
-          font-size: calc(#{$footer-font-size} + 2px);
-        }
-      }
+    
+    .welcome-container {
+        @include flex-direction(row);
+        @include justify-content(space-between);
     }
-  }
+    
+    .welcome-section {
+        @include display(flex);
+        @include justify-content(space-between);
+        @include align-items(center);
+        text-align: left;
+        max-width: max-content;
+    }
+
+    .welcome-text {
+        width: 60%;
+        padding-left: 20px;
+    }
+
+    .welcome-section img.welcome-image {
+        width: 35%;
+        margin: 0;
+    }
+
+    .featured-section {
+        text-align: left;
+    }
+
+    .featured-products {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    footer {
+        @include flex-direction(row);
+        @include justify-content(space-evenly);
+    }
+
+    footer .footer-container {
+        @include flex-direction(row);
+    }
+
+    .search-section {
+        @include flex-direction(row);
+        @include align-items(flex-start);
+        gap: 10px;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .contact-form {
+        grid-template-rows: repeat(3, 1fr);
+        padding: 15px;
+    }
+    
+    .cart-item {
+        @include flex-direction(row);
+        @include align-items(center);
+    }
+
+    .item-details {
+        @include flex-direction(row);
+        @include align-items(flex-start);
+    }
+
+    .item-details input[type="number"] {
+        width: 100%;
+    }
+
+    .item-details button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar {
+        @include flex-direction(row); 
+        @include justify-content(space-between);
+    }
+
+    .navbar-collapse {
+        @include display(flex);
+        @include justify-content(flex-end);
+    }
+
+    .navbar-nav {
+        @include flex-direction(row);
+    }
+
+    .nav-item {
+        margin: 0 20px; 
+    }
 }
+
+

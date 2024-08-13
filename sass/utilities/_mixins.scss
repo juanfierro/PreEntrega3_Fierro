@@ -1,5 +1,9 @@
 
-// _mixins.scss
+@mixin box-shadow($shadow: 0 4px 8px rgba(0, 0, 0, 0.2)) {
+  box-shadow: $shadow;
+}
+
+
 @mixin box-style($padding: $padding-small, $margin: $margin-bottom, $radius: $border-radius) {
   padding: $padding;
   margin-bottom: $margin;
@@ -8,8 +12,6 @@
 }
 
 
-
-// _mixins.scss
 @mixin navbar-link-styles {
     color: $navbar-text-color;
     text-decoration: none;
@@ -18,8 +20,6 @@
   }
 
 
-
-// _mixins.scss
 @mixin footer-text-styles {
     color: $footer-text-color;
     font-size: $footer-font-size;
@@ -31,7 +31,7 @@
   }
   
 
-// _mixins.scss
+
 @mixin background-image($image-path) {
   background-image: url($image-path);
   background-size: cover;
@@ -40,8 +40,6 @@
 
 
 
-
-// _mixins.scss
 @mixin border-radius($radius: $border-radius) {
   border-radius: $radius;
 }
@@ -52,10 +50,6 @@
   @include border-radius();
 }
 
-
-@mixin border-radius($radius: $border-radius-small) {
-  border-radius: $radius;
-}
 
 @mixin background-semi-transparent($color: $white-semi-transparent) {
   background-color: $color;
@@ -79,9 +73,7 @@
   border-radius: $radius;
 }
 
-@mixin box-shadow($shadow: 0 4px 8px rgba(0, 0, 0, 0.2)) {
-  box-shadow: $shadow;
-}
+
 
 @mixin transition($property: all, $duration: 0.3s) {
   transition: $property $duration;
@@ -92,4 +84,29 @@
   flex-direction: $direction;
   justify-content: $justify;
   align-items: $align;
+}
+
+// sass/utilities/_mixins.scss
+
+// Mixin para flex-direction
+@mixin flex-direction($direction) {
+  display: flex;
+  flex-direction: $direction;
+}
+
+// Mixin para justify-content
+@mixin justify-content($alignment) {
+  display: flex;
+  justify-content: $alignment;
+}
+
+// Mixin para align-items
+@mixin align-items($alignment) {
+  display: flex;
+  align-items: $alignment;
+}
+
+// Mixin para display
+@mixin display($display) {
+  display: $display;
 }

@@ -1,0 +1,46 @@
+//_contact.scss
+
+@import '../utilities/variables';
+@import '../utilities/mixins';    
+
+.contact-form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: $white-transparent; 
+  @include border-radius(5px);
+
+  form {
+    display: grid;
+    gap: 15px;
+  }
+
+  label {
+    font-weight: bold;
+    font-family: 'Imbue', sans-serif;
+    font-size: 1.5rem;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    @include border-radius(5px); // Utilizar mixin para border-radius
+  }
+
+  textarea {
+    resize: vertical;
+    height: 300px;
+  }
+
+  button {
+    padding: 10px;
+    border: 1px solid grey; // Corregido para incluir el borde
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+    @include border-radius(5px); // Utilizar mixin para border-radius
+  }
+}
